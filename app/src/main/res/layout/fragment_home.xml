@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Corona Virus Global Data"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLabelConfirmed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmed Cases"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalConfirmed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLabelContries"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Affected Countries"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalCountries"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorCountries"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvLabelDeaths"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Death Cases"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalDeaths"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvLabelTotalRecovered"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Recovered Cases"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalRecovered"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLabelTotaltests"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tests Done"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTotaltests"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+
+                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvLabelTotalCritical"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Critical Cases"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalCritical"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                 />
+            </LinearLayout>
+    <TextView
+        android:id="@+id/tvLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        tools:text="Last Updated\n Mon, 23 Mar 2020 1:20:30 PM" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:indeterminate="true"
+        android:id="@+id/progress_circular_home"
+        android:layout_height="100dp"/>
+</LinearLayout>
